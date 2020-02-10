@@ -6,7 +6,6 @@ apply plugin: 'kotlin-kapt'
 android {
     defaultConfig {
         applicationId build_info.defaultApplicationId
-
     }
     buildTypes {
         release {
@@ -24,7 +23,6 @@ android {
     }
 }
 
-
 dependencies {
     implementation project(':data')
     implementation project(':domain')
@@ -40,13 +38,5 @@ dependencies {
 
     implementation deps.koin.android
     implementation deps.koin.androidviewmodel
-    api deps.kotlin.coroutines.android
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
-
-
-
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation deps.kotlin.coroutines.android
 }
