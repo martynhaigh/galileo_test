@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
+dependencies {
+    implementation project(":domain")
+
+    implementation deps.androidx.ktx.core
+
+    implementation deps.okhttp.core
+    implementation deps.okhttp.interceptor
+    implementation deps.retrofit.core
+    implementation deps.retrofit.moshi
+    implementation deps.moshi.core
+    implementation deps.misc.retrofitCoroutinesConverter
+
+    api deps.misc.timber
+    kapt deps.moshi.compiler
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

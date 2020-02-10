@@ -1,0 +1,10 @@
+apply plugin: 'kotlin'
+
+
+dependencies {
+    implementation deps.kotlin.stdlib.core
+    api deps.kotlin.coroutines.core
+    api deps.koin.core
+
+}
+

@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    defaultConfig {
+        applicationId build_info.defaultApplicationId
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+
+dependencies {
+    implementation project(':data')
+    implementation project(':domain')
+
+    implementation deps.androidx.appCompat
+    implementation deps.androidx.cardview
+
+    implementation deps.androidx.fragment
+    implementation deps.androidx.ktx.core
+    implementation deps.androidx.lifecycle.livedataktx
+    implementation deps.androidx.lifecycle.viewmodelktx
+    implementation deps.androidx.constraintLayout
+
+    implementation deps.koin.android
+    implementation deps.koin.androidviewmodel
+    api deps.kotlin.coroutines.android
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

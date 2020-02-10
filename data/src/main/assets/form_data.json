@@ -1,0 +1,99 @@
+{
+  "medications": {
+    "6062": {
+      "name": "Lipitor"
+    },
+    "1138": {
+      "name": "Amoxil"
+    }
+  },
+  "generic_form": {
+    "questions": [
+      {
+        "id": "5c871c4196e0453283e36f93bf61d264",
+        "type": "free_text",
+        "text": "Add any specific notes about dosing, reason/frequency, etc."
+      },
+      {
+        "id": "5c871c4196e0453283e36f93bf61d264",
+        "type": "multi_select",
+        "text": "Select if any of the following might apply to you.",
+        "answers": [
+          {
+            "id": "7d69e199f712413da44b773bf6d133d5",
+            "text": "Possible pregnancy"
+          },
+          {
+            "id": "ce79dca920544813b494f54ed0f00b63",
+            "text": "Currently breastfeeding"
+          },
+          {
+            "id": "5a4428b00eec41e2bdcc0ce30606bb9c",
+            "text": "Change in liver function"
+          },
+          {
+            "id": "98d1b50953f84b4b88e5dbc5293d917c",
+            "text": "Change in kidney function"
+          }
+        ]
+      }
+    ]
+  },
+  "batch_form": {
+    "questions": [
+      {
+        "id": "5c871c4196e0453283e36f93bf61d264",
+        "type": "multi_select",
+        "text": "Select if any of the following might apply to you.",
+        "answers": [
+          {
+            "id": "7d69e199f712413da44b773bf6d133d5",
+            "text": "Possible pregnancy"
+          },
+          {
+            "id": "ce79dca920544813b494f54ed0f00b63",
+            "text": "Currently breastfeeding"
+          },
+          {
+            "id": "5a4428b00eec41e2bdcc0ce30606bb9c",
+            "text": "Change in liver function"
+          },
+          {
+            "id": "98d1b50953f84b4b88e5dbc5293d917c",
+            "text": "Change in kidney function"
+          }
+        ]
+      }
+    ]
+  },
+  "medication_specific_forms": {
+    "6062": {
+      "questions": [
+        {
+          "id": "0bd70abae94811e89f32f2801f1b9fd1",
+          "type": "free_text",
+          "text": "Which brand are you currently, or were you last, taking?"
+        },
+        {
+          "id": "5c871c4196e0453283e36f93bf61d264",
+          "type": "multi_select",
+          "text": "Select if you've experienced any of the following side effects",
+          "answers": [
+            {
+              "id": "7d69e199f712413da44b773bf6d133d5",
+              "text": "Dizziness"
+            },
+            {
+              "id": "ce79dca920544813b494f54ed0f00b63",
+              "text": "High blood pressure"
+            },
+            {
+              "id": "5a4428b00eec41e2bdcc0ce30606bb9c",
+              "text": "Trouble sleeping"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
